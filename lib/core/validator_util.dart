@@ -11,7 +11,6 @@ class ValidatorUtil {
   }
 
   static String? validatorNickName(String? value) {
-    //
     if (value?.trim().isEmpty ?? true) {
       return "닉네임을 입력해주세요.";
     }
@@ -27,6 +26,16 @@ class ValidatorUtil {
     }
     if (value!.length < 2) {
       return '비밀번호를 2글자 이상이여야 합니다.';
+    }
+    return null;
+  }
+
+  static String? validatorTitle(String? value) {
+    if (value?.trim().isEmpty ?? true) {
+      return "상품명을 입력해주세요.";
+    }
+    if (value!.length < 2) {
+      return '상품명은 2글자 이상이여야 합니다.';
     }
     return null;
   }
