@@ -14,8 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: JoinPage(),
+      home: HomePage(),
       // home: WelcomePage(),
+      // home: JoinPage(),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         highlightColor: Colors.orange,
