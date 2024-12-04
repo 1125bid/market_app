@@ -4,6 +4,8 @@ import 'package:flutter_market_app/ui/pages/chat_detail/widgets/id_text_form_fie
 import 'package:flutter_market_app/ui/pages/chat_detail/widgets/nickname_text_form_field%20copy%202.dart';
 
 class JoinPage extends StatefulWidget {
+  JoinPage(this.address);
+  final String address;
   @override
   State<JoinPage> createState() => _JoinPageState();
 }

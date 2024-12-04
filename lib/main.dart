@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_market_app/ui/pages/chat_detail/chat_detail_page.dart';
 import 'package:flutter_market_app/ui/pages/home/home_page.dart';
 import 'package:flutter_market_app/ui/pages/join/join_page.dart';
 import 'package:flutter_market_app/ui/pages/welcome/welcome_page.dart';
@@ -14,8 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
-      // home: WelcomePage(),
+      // home: ChatDetailPage(),
+      // home: HomePage(),
+      home: WelcomePage(),
       // home: JoinPage(),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
