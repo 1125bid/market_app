@@ -69,7 +69,7 @@ class AddressSearchPage extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return JoinPage();
+                                  return JoinPage(item);
                                 },
                               ),
                             );
