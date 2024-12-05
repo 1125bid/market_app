@@ -18,7 +18,8 @@ class ImagePickerHelper {
   //imagePicker로 사진 불러와서
   // mime 패키지로 mimeType 읽은 후 함께 돌려줘야 하기 때문에.
 
-  Future<PickImageResult?> pickImage() async {
+//ImagePickerHelper.pickImage();
+  static Future<PickImageResult?> pickImage() async {
     //
     final imagePicker = ImagePicker();
     final xFile = await imagePicker.pickImage(source: ImageSource.gallery);
