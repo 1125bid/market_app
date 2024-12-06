@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_market_app/core/validator_util.dart';
+import 'package:flutter_market_app/data/model/product.dart';
 import 'package:flutter_market_app/ui/pages/product_write/widgets/prodcut_category_box.dart';
 import 'package:flutter_market_app/ui/pages/product_write/widgets/product_write_picture_area.dart';
 

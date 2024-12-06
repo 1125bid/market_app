@@ -8,7 +8,7 @@ abstract class BaseRemoteRepository {
   Dio get client => _client;
   static Dio _client = Dio(
     BaseOptions(
-      baseUrl: 'http://172.20.96.1:8080',
+      baseUrl: 'http://192.168.0.17:8080',
       //설정 안할 시 실패 응답오면 throw 던져서 에러남,
       validateStatus: (status) => true,
     ),

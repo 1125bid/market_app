@@ -5,21 +5,26 @@ import 'package:flutter_market_app/ui/pages/product_detail/widgets/product_detai
 import 'package:flutter_market_app/ui/pages/product_detail/widgets/product_detail_picture.dart';
 
 class ProductDetailPage extends StatelessWidget {
+  ProductDetailPage(this.productId);
+  final int productId;
+
   @override
   Widget build(BuildContext context) {
     // print(MediaQuery.of(context).padding.bottom);
     return Scaffold(
         appBar: AppBar(
           actions: [
-            ProductDetailActions(),
+            ProductDetailActions(productId),
           ],
         ),
-        bottomSheet:
-            ProductDetailBottomSheet(MediaQuery.of(context).padding.bottom),
+        bottomSheet: ProductDetailBottomSheet(
+          MediaQuery.of(context).padding.bottom,
+          productId,
+        ),
         body: ListView(
           children: [
-            ProductDetailPicture(),
-            ProductDetailBody(),
+            ProductDetailPicture(productId),
+            ProductDetailBody(productId),
           ],
         ));
   }

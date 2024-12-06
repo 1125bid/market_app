@@ -24,7 +24,7 @@ import 'package:flutter_market_app/data/model/address.dart';
 import 'package:flutter_market_app/data/model/file_model.dart';
 
 class ProductSummary {
-  String id;
+  int id;
   String title;
   String content;
   FileModel thumbnail;
